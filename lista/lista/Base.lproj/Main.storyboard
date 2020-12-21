@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="peP-Fm-xnB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="lista" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="11U-zF-u1q">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="CMq-ft-lgQ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CMq-ft-lgQ" id="blS-a7-jzb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="11U-zF-u1q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K37-IN-fhx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="11U-zF-u1q" secondAttribute="trailing" id="Opp-tl-RHA"/>
+                            <constraint firstItem="11U-zF-u1q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YBc-6a-Zf8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="11U-zF-u1q" secondAttribute="bottom" id="y8X-v3-Y9f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sCQ-XW-yQ0"/>
+                    <connections>
+                        <outlet property="mitabla" destination="11U-zF-u1q" id="dmp-Wh-ir6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2050.7246376811595" y="-427.23214285714283"/>
+        </scene>
+        <!--Add-->
+        <scene sceneID="wP2-Q8-u6g">
+            <objects>
+                <viewController id="FB0-Yv-Rep" customClass="SecondViewController" customModule="lista" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C4Y-iN-eYu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Que quieres poner en la lista?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huB-DN-9uA">
+                                <rect key="frame" x="20" y="64" width="225" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZYF-ww-Foq">
+                                <rect key="frame" x="10" y="115" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3O-Up-9oS">
+                                <rect key="frame" x="152.5" y="189" width="109" height="30"/>
+                                <state key="normal" title="Poner en la lista"/>
+                                <connections>
+                                    <action selector="additem:" destination="FB0-Yv-Rep" eventType="touchUpInside" id="xjk-L1-3Mj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pay-p8-mxA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZYF-ww-Foq" firstAttribute="leading" secondItem="Pay-p8-mxA" secondAttribute="leading" constant="10" id="1uq-YM-PX7"/>
+                            <constraint firstItem="E3O-Up-9oS" firstAttribute="top" secondItem="ZYF-ww-Foq" secondAttribute="bottom" constant="40" id="7xM-fB-jhG"/>
+                            <constraint firstItem="Pay-p8-mxA" firstAttribute="trailing" secondItem="ZYF-ww-Foq" secondAttribute="trailing" constant="10" id="Bko-5y-F0C"/>
+                            <constraint firstItem="ZYF-ww-Foq" firstAttribute="top" secondItem="huB-DN-9uA" secondAttribute="bottom" constant="30" id="CAG-Op-WFa"/>
+                            <constraint firstItem="huB-DN-9uA" firstAttribute="top" secondItem="Pay-p8-mxA" secondAttribute="top" constant="20" id="Jud-Gb-mi1"/>
+                            <constraint firstItem="E3O-Up-9oS" firstAttribute="centerX" secondItem="C4Y-iN-eYu" secondAttribute="centerX" id="u6W-aN-V4D"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add" image="pencil" catalog="system" id="AOQ-bi-zdb"/>
+                    <connections>
+                        <outlet property="item" destination="ZYF-ww-Foq" id="BhL-jX-AB0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adh-10-A3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140.5797101449277" y="259.82142857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="g9S-2G-HiE">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="peP-Fm-xnB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A85-06-NNA">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nbY-qS-zVg" kind="relationship" relationship="viewControllers" id="c9s-gk-plQ"/>
+                        <segue destination="FB0-Yv-Rep" kind="relationship" relationship="viewControllers" id="aKD-jn-TAa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTW-AD-puO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="128.57142857142856"/>
+        </scene>
+        <!--Lista-->
+        <scene sceneID="8bE-qW-z1g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nbY-qS-zVg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Lista" image="note.text" catalog="system" id="gKZ-mE-Cea"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2ji-bV-RB4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gr0-8v-iyz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCg-vW-PeJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140.5797101449277" y="-427.23214285714283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="note.text" catalog="system" width="128" height="106"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
